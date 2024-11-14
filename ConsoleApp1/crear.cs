@@ -8,20 +8,35 @@ namespace ConsoleApp1
 {
     public class crear
     {
-
-            string[] estudiantes1 = new string[0];
+        string[] nick1 = new string[0];
+        string[] uni1 = new string[0];
+        string[] enfermedad = new string[0];
             int posicion = 0;
 
             public void creard()
             {
-                string des;
+                string nom;
                 Console.Write("Ingresa el nombre del estudiante : ");
-                des = Console.ReadLine();
-                Array.Resize(ref estudiantes1, estudiantes1.Length + 1);
-                estudiantes1[posicion] = des;
+                nom = Console.ReadLine();
+                Array.Resize(ref nick1, nick1.Length + 1);
+               nick1[posicion] =nom;
                 posicion = posicion + 1;
                 Console.WriteLine("A agregado una cita ");
-            }
+            string uni;
+            Console.Write("Ingresa el nombre de la universidad : ");
+            uni = Console.ReadLine();
+            Array.Resize(ref uni1, uni1.Length + 1);
+            uni1[posicion] = uni;
+            posicion = posicion + 1;
+            Console.WriteLine("A agregado su cita ");
+            string enfermedad1;
+            Console.Write("Ingresa el nombre de la enfermedad : ");
+            enfermedad1 = Console.ReadLine();
+            Array.Resize(ref enfermedad, enfermedad.Length + 1);
+            enfermedad[posicion] = uni;
+            posicion = posicion + 1;
+            Console.WriteLine("A agregado una enfermedad ");
+        }
 
     }
 }
