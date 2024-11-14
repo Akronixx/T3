@@ -1,7 +1,6 @@
 ﻿using estudiante;
 using ConsoleApp1;
 using ConsoleApp2;
-using ConsoleApp3;
 byte opcion;
 string[] nick1 = new string[0];
 crear g=new crear();
@@ -10,9 +9,6 @@ crear h=new crear();
 string[] enfermedad = new string[0];
 crear i = new crear();
 estudiantes d = new estudiantes();
-d.cod = 0444555;
-d.Nombre = "Jose Carlos";
-d.uni = "UPN";
 string regresar;
 do
 {
@@ -54,7 +50,7 @@ do
 
         case 1: g.creard(); h.creard(); i.creard(); break;
 
-        case 2: break;
+        case 2: Console.WriteLine(d);  break;
 
         case 3: break;
 
